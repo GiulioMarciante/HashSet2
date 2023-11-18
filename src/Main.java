@@ -7,9 +7,11 @@ import java.util.Set;
 //Verificare che l' elemento sia parte del Set e stampare il risultato
 public class Main {
     public static void main(String[] args) {
-        Number num = new Number(4);
+        Number num = new Number(5);
 
         Set<Integer> numbers = makeHashSet(num);
+
+        numbers.add(num.number);
 
         if(numbers.contains(4)){
             System.out.println("The number is contained in the set");
@@ -20,8 +22,6 @@ public class Main {
     }
     public static Set<Integer> makeHashSet(Number num){
         Set<Integer> hashSetNumbers = new HashSet<Integer>(Arrays.asList(1,2,3));
-
-        hashSetNumbers.add(num.number);
 
         return hashSetNumbers;
     }
