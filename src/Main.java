@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Number num = new Number(5);
 
-        Set<Integer> numbers = makeHashSet(num);
+        Set<Integer> numbers = makeHashSet();
 
         numbers.add(num.number);
 
@@ -20,8 +20,8 @@ public class Main {
             System.out.println("The number is not contained in the set");
         }
     }
-    public static Set<Integer> makeHashSet(Number num){
+    public static Set<Integer> makeHashSet(){
 
-        return new HashSet<Integer>(Arrays.asList(1,2,3));
+        return new HashSet<>(Arrays.asList(1,2,3));
     }
 }
