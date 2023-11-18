@@ -21,8 +21,7 @@ public class Main {
         }
     }
     public static Set<Integer> makeHashSet(Number num){
-        Set<Integer> hashSetNumbers = new HashSet<Integer>(Arrays.asList(1,2,3));
 
-        return hashSetNumbers;
+        return new HashSet<Integer>(Arrays.asList(1,2,3));
     }
 }
